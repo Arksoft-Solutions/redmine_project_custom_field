@@ -33,7 +33,7 @@ Redmine 6.x and future versions.
 
 ```bash
 git clone https://github.com/Arksoft-Solutions/redmine_project_custom_field
-
+```
 
 2. Restart Redmine to load the plugin.
 
