@@ -61,6 +61,39 @@ The field will now appear as a project selector when creating or editing issues.
 
 ---
 
+## Dependencies
+
+This plugin does not require any additional Ruby gems.
+
+It is implemented using only Redmine core APIs and classes, such as:
+
+* Redmine::FieldFormat
+* CustomField
+* Project (including project hierarchy via lft / rgt)
+* Standard Rails view helpers
+
+No changes are made to:
+
+* Gemfile
+* Gemfile.local
+* Bundler configuration
+
+There is no need to run:
+* bundle install
+
+specifically for this plugin.
+
+*Why no dependencies?*
+
+The goal of this plugin is to:
+
+* Keep installation simple and safe
+* Avoid introducing external dependencies
+* Ensure long-term compatibility with Redmine upgrades
+* Follow Redmine plugin development best practices
+
+--- 
+
 ## How to works
 
 - The plugin defines a new FieldFormat that extends Redmine’s List format
